@@ -1,0 +1,57 @@
+
+.slider-image {
+    width: 100%; /* Ensure the image spans the container width */
+    max-width: 80%; /* Set a consistent maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center images in their container */
+    object-fit: cover; /* Ensure consistent scaling */
+  }
+  .custom-slider-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Adjust as needed */
+  }
+  
+  .slider-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Add shadow for a polished look */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+  }
+  
+  .slider-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .slick-dots li button:before {
+    color: #fff; /* Dot color */
+    font-size: 12px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ffcc00; /* Active dot color */
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+    font-size: 24px;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #ffcc00;
+    opacity: 1;
+  }
+  
